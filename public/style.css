@@ -1,102 +1,69 @@
-/* Reset básico */
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
 body {
-    font-family: Courier, monospace;
-    background-color: #f4f4f4;
-    color: #333333;
+    font-family: Arial, sans-serif;
     max-width: 600px;
     margin: 40px auto;
-    padding: 20px;
+    padding: 0 20px;
+    background: #f9f9f9;
+    color: #333;
+    line-height: 1.5;
 }
 
 h1,
 h2 {
     text-align: center;
-    color: #2c3e50;
-}
-
-h1 {
-    font-size: 2rem;
+    color: #444;
     margin-bottom: 20px;
 }
 
-h2 {
-    font-size: 1.2rem;
-    margin: 20px 0;
-}
-
-#formulario {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 8px;
+form {
+    background: #fff;
     padding: 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
 }
 
-#formulario input,
-#formulario button {
-    font-size: 1rem;
+form input,
+form button {
+    width: 100%;
     padding: 10px;
+    margin-bottom: 10px;
     border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
 }
 
-#formulario input {
-    border: 1px solid #ddd;
-}
-
-#formulario button {
+form button {
+    background: #007bff;
+    color: white;
     border: none;
-    background-color: #2980b9;
-    color: #fff;
     cursor: pointer;
-    transition: background-color 0.2s;
+    transition: background 0.2s;
 }
 
-#formulario button:hover {
-    background-color: #1f6391;
+form button:hover {
+    background: #0056b3;
 }
 
 #respuesta {
     display: none;
-    background-color: #ecf0f1;
-    border: 1px solid #2980b9;
+    background: #e9f7fe;
+    border: 1px solid #b3e5fc;
     border-radius: 4px;
     padding: 15px;
-    margin-bottom: 30px;
-    margin-top: 30px;
+    margin-bottom: 20px;
 }
 
 #historial {
-    list-style: none;
     padding: 0;
-    max-height: 500px;
+    max-height: 550px;
     overflow-y: auto;
-    padding-right: 10px;
 }
 
 #historial li {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    padding: 12px 15px;
+    background: #fff;
+    padding: 12px;
     margin-bottom: 10px;
-    font-size: 0.9rem;
-}
-
-/* Responsive */
-@media (max-width: 480px) {
-    body {
-        padding: 10px;
-    }
-
-    #formulario {
-        padding: 15px;
-    }
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
 }
